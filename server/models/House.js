@@ -3,8 +3,8 @@ const Schema = mongoose.Schema;
 
 const House = new Schema(
   {
-    bedrooms: { type: String, required: true },
-    bathrooms: { type: String, required: true },
+    bedrooms: { type: Number, required: true },
+    bathrooms: { type: Number, required: true },
     levels: { type: Number, required: true },
     imgUrl: { type: String, required: true, default: '//placehold.it/300x300' },
     year: { type: Number, required: true },
